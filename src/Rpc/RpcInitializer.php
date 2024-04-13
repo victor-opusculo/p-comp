@@ -80,7 +80,7 @@ final class RpcInitializer
 		try
 		{		
 			$urlParams = null;
-			if (!empty($matches) && !empty($routeClass))
+			if (!empty($matches) && !empty($lastFunctionClassFound))
 			{
 				$paramNames = [];
 				preg_match_all('/\[(\w+?)\]/', implode('/', $finalRoutePaths ), $paramNames);			
